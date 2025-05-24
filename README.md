@@ -10,10 +10,11 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
 
 
 🧰 Tech Stack
-	•  Snowflake – Data warehouse platform for cloud analytics
-	•  Amazon S3 – Cloud object storage for staging raw data
-	•  AWS IAM – Role-based access control for secure authentication
-	•  SQL – Snowflake DDL for stage creation and testing
+	•	Snowflake – Data warehouse platform for cloud analytics
+	•	Amazon S3 – Cloud object storage for staging raw data
+	•	AWS IAM – Role-based access control for secure authentication
+	•	SQL – Snowflake DDL for stage creation and testing
+
 
 📁 Project Structure
 
