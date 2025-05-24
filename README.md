@@ -28,4 +28,6 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
 1. 📦 Upload Data to S3
 	•	Create an S3 bucket (e.g., my-snowflake-data)
 	•	Upload sample data files (CSV/JSON/etc.) to a folder within the bucket
- 
+   <img width="1440" alt="Screenshot 2025-05-24 at 10 07 37" src="https://github.com/user-attachments/assets/07da4618-a605-4cfe-9e8c-b02c6025aeaf" />
+
+
