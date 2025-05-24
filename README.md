@@ -2,7 +2,7 @@
 
 This project demonstrates how to securely ingest structured data from Amazon S3 into Snowflake using External Stage Objects and Snowflake-created AWS IAM roles. It showcases secure cross-platform integration between cloud services and data platforms in a scalable, production-grade architecture.
 
-## 🚀 Project Overview
+# 🚀 Project Overview
 
 - **Objective:** Set up a secure data ingestion pipeline that allows Snowflake to read data files stored in AWS S3 using an External Stage.
 - **Scope:** Includes Snowflake integration, IAM role creation, S3 bucket configuration, and access policy setup for secure and scalable data lake ingestion.
