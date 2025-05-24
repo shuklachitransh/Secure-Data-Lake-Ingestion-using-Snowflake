@@ -62,10 +62,10 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
      LIST @my_ext_stage;
 
 ## 🔒 Security Highlights
-	•	Uses Snowflake-created IAM roles with least privilege principle
-	•	No static credentials — all access is token-based and scoped
-	•	Ensures secure, auditable data access between Snowflake and AWS
+	• Uses Snowflake-created IAM roles with least privilege principle
+	• No static credentials — all access is token-based and scoped
+	• Ensures secure, auditable data access between Snowflake and AWS
 ## 📈 Use Cases
-	•	Secure data ingestion from AWS to Snowflake
-	•	Building a scalable data lakehouse architecture
-	•	Enterprise-grade cloud integration for analytics workloads
+	• Secure data ingestion from AWS to Snowflake
+	• Building a scalable data lakehouse architecture
+	• Enterprise-grade cloud integration for analytics workloads
