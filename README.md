@@ -10,10 +10,10 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
 
 
 🧰 Tech Stack
-	•	Snowflake – Data warehouse platform for cloud analytics
-	•	Amazon S3 – Cloud object storage for staging raw data
-	•	AWS IAM – Role-based access control for secure authentication
-	•	SQL – Snowflake DDL for stage creation and testing\
+	•  Snowflake – Data warehouse platform for cloud analytics
+	•  Amazon S3 – Cloud object storage for staging raw data
+	•  AWS IAM – Role-based access control for secure authentication
+	•  SQL – Snowflake DDL for stage creation and testing
 
 📁 Project Structure
 
@@ -28,6 +28,14 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
 1. 📦 Upload Data to S3
 	•	Create an S3 bucket (e.g., my-snowflake-data)
 	•	Upload sample data files (CSV/JSON/etc.) to a folder within the bucket
+
    <img width="1440" alt="Screenshot 2025-05-24 at 10 07 37" src="https://github.com/user-attachments/assets/07da4618-a605-4cfe-9e8c-b02c6025aeaf" />
+
+2. 🔐 Create IAM Role for Snowflake
+
+	•	In AWS IAM, create a new role with:
+	•	Trust policy for Snowflake account
+	•	Permissions policy (read-only) for the S3 bucket
+     <img width="1440" alt="Screenshot 2025-05-24 at 10 07 47" src="https://github.com/user-attachments/assets/6e378d55-ea54-4675-a200-c68c10eb3a91" />
 
 
