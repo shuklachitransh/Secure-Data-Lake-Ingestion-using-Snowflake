@@ -9,11 +9,12 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
   <img width="1372" alt="Screenshot 2025-05-21 at 18 27 23" src="https://github.com/user-attachments/assets/95e63e0b-0292-49ab-8705-d60d66eefc8a" />
 
 
-🧰 Tech Stack
-	•	Snowflake – Data warehouse platform for cloud analytics
-	•	Amazon S3 – Cloud object storage for staging raw data
-	•	AWS IAM – Role-based access control for secure authentication
-	•	SQL – Snowflake DDL for stage creation and testing
+🛠️ Tech Stack
+	•	Snowflake — Cloud-based data warehouse platform for analytics
+	•	Amazon S3 — Cloud object storage for staging raw and ingested data
+	•	AWS IAM — Role-based access control for secure authentication between Snowflake and S3
+	•	SQL — Used for Snowflake DDL operations, integration setup, and data querying
+	•	External Stages — Snowflake objects that link directly to S3 storage securely
 
 
 📁 Project Structure
