@@ -37,5 +37,32 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
 	•	Trust policy for Snowflake account
 	•	Permissions policy (read-only) for the S3 bucket
      <img width="1440" alt="Screenshot 2025-05-24 at 10 07 47" src="https://github.com/user-attachments/assets/6e378d55-ea54-4675-a200-c68c10eb3a91" />
+     
+3. 🔗 Set Up Snowflake Integration
 
+  <img width="1440" alt="Screenshot 2025-05-24 at 10 08 25" src="https://github.com/user-attachments/assets/3f0ee4a1-0231-4438-83d1-8a1aa73c53c6" />
 
+  • Use DESC INTEGRATION to get the external ID
+  • Add external ID to IAM role trust relationship
+4. 🌐 Create External Stage
+    CREATE OR REPLACE STORAGE INTEGRATION my_s3_integration
+    TYPE = EXTERNAL_STAGE
+    STORAGE_PROVIDER = S3
+    ENABLED = TRUE
+    STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::767397922128:role/demo-2025-aws-snowflake'
+    STORAGE_ALLOWED_LOCATIONS = ('s3://demo-2025-aws-snowflake/');
+
+✅ Test the Integration
+    Run the following to list files from the external stage:
+    <img width="1440" alt="Screenshot 2025-05-24 at 10 08 37" src="https://github.com/user-attachments/assets/ea7bb7d5-282b-46f2-ad6d-5578a56a88a4" />
+
+     LIST @my_ext_stage;
+
+🔒 Security Highlights
+	•	Uses Snowflake-created IAM roles with least privilege principle
+	•	No static credentials — all access is token-based and scoped
+	•	Ensures secure, auditable data access between Snowflake and AWS
+📈 Use Cases
+	•	Secure data ingestion from AWS to Snowflake
+	•	Building a scalable data lakehouse architecture
+	•	Enterprise-grade cloud integration for analytics workloads
