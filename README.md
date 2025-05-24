@@ -11,7 +11,7 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
 
 ---
 
-## 🧰 Tech Stack
+# 🧰 Tech Stack
 
 - **Snowflake** – Data warehouse platform for cloud analytics  
 - **Amazon S3** – Cloud object storage for staging raw data  
@@ -20,7 +20,7 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```bash
 .
@@ -29,6 +29,7 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
 ├── snowflake_integration.sql # Snowflake integration setup
 ├── sample_data/              # Example files stored in S3
 └── README.md
+
 
 🔧 Setup Instructions
 
