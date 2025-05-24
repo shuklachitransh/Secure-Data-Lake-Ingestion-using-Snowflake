@@ -19,13 +19,12 @@ This project demonstrates how to securely ingest structured data from Amazon S3 
 - **External Stages** — Snowflake objects that link directly to S3 storage securely
 
 
-📁 Project Structure
-
-├── create_stage.sql          # SQL script to create external stage in Snowflake
-├── aws_iam_policy.json       # IAM policy for S3 access
-├── snowflake_integration.sql # Snowflake integration setup
-├── sample_data/              # Example files stored in S3
-└── README.md
+## 📁 Project Structure
+	•	create_stage.sql— SQL script to create an external stage in Snowflake
+	•	aws_iam_policy.json — IAM policy that grants Snowflake read access to the S3 bucket
+	•	snowflake_integration.sql — Snowflake integration setup script for AWS IAM role linking
+	•	sample_data/ — Directory containing sample data files (e.g., CSV/JSON) stored in S3
+	•	README.md — Documentation and setup guide for the project
 
 🔧 Setup Instructions
 
